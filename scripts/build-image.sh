@@ -15,4 +15,4 @@ set -u # or set -o nounset
 : "$CONTAINER_REGISTRY"
 : "$VERSION"
 
-docker buildx build --platform linux/amd64 -t $CONTAINER_REGISTRY/video-streaming:$VERSION --file ./Dockerfile-prod .
+docker buildx build --platform linux/amd64 -t $CONTAINER_REGISTRY/video-streaming:4 --file ./Dockerfile-prod .
