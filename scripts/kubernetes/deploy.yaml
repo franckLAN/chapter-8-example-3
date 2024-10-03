@@ -23,7 +23,7 @@ spec:
     spec:
       containers: 
       - name: video-streaming
-        image: $CONTAINER_REGISTRY/video-streaming:4
+        image: $CONTAINER_REGISTRY/video-streaming:$VERSION
         imagePullPolicy: Always
         env:
         - name: PORT
