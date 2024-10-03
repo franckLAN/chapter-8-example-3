@@ -19,5 +19,5 @@ set -u # or set -o nounset
 : "$REGISTRY_UN"
 : "$REGISTRY_PW"
 
-docker login  --u $REGISTRY_UN -p $REGISTRY_PW
+docker login  -u $REGISTRY_UN -p $REGISTRY_PW
 docker push $CONTAINER_REGISTRY/video-streaming:4
